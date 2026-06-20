@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Aurora Alpine Resort — An ultra-luxury mountain sanctuary in the Swiss Alps. Experience bespoke hospitality, panoramic glacier views, and timeless Alpine elegance.">
+<meta name="keywords" content="luxury hotel, Swiss Alps, alpine resort, honeymoon, luxury suite, Switzerland">
+<meta property="og:title" content="Aurora Alpine Resort | Swiss Alps">
+<meta property="og:description" content="Where the Alps meet uncompromising luxury. Private chalets, alpine spa, Michelin-starred dining.">
+<title>Aurora Alpine Resort | Swiss Alps Luxury Hotel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- AMBIENT LIGHT -->
+<div id="ambient"></div>
+
+<!-- CURSOR -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- LOADER -->
+<div id="loader">
+  <div class="loader-emblem">AURORA</div>
+  <div class="loader-sub">Alpine Resort &nbsp;·&nbsp; Swiss Alps</div>
+  <div class="loader-line"></div>
+</div>
+
+<!-- MOBILE NAV -->
+<div id="mobile-nav" role="dialog" aria-label="Navigation">
+  <button class="mobile-close" aria-label="Close menu">&#10005;</button>
+  <a href="#rooms">Rooms &amp; Suites</a>
+  <a href="#dining">Dining</a>
+  <a href="#spa">Spa &amp; Wellness</a>
+  <a href="#experiences">Experiences</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#reservation">Reservations</a>
+  <a href="#location">Contact</a>
+</div>
+
+<!-- NAVIGATION -->
+<nav id="nav" role="navigation" aria-label="Main navigation">
+  <a href="#hero" class="nav-logo">AURORA <span>·</span> ALPINE</a>
+  <ul class="nav-links" role="list">
+    <li><a href="#rooms">Rooms &amp; Suites</a></li>
+    <li><a href="#dining">Dining</a></li>
+    <li><a href="#spa">Spa &amp; Wellness</a></li>
+    <li><a href="#experiences">Experiences</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#location">Contact</a></li>
+  </ul>
+  <a href="#reservation" class="nav-cta">Reserve</a>
+  <button class="nav-hamburger" aria-label="Open menu" id="hamburger">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<!-- HERO -->
+<section id="hero" role="banner">
+  <div class="hero-bg"></div>
+  <canvas id="aurora-canvas" aria-hidden="true"></canvas>
+  <div class="hero-overlay"></div>
+  <div class="hero-photo-hint">[ HERO PHOTOGRAPH — SWISS ALPS PANORAMA ]</div>
+  <div class="hero-content">
+    <p class="hero-eyebrow">Swiss Alps, Switzerland &nbsp;·&nbsp; Est. 1924</p>
+    <h1 class="hero-title">Where the<br>Alps Meet<br><em>Eternity</em></h1>
+    <p class="hero-desc">An ultra-private sanctuary suspended among glaciers and silence. Aurora Alpine Resort — the world's most secluded five-star address.</p>
+    <div class="hero-actions">
+      <a href="#reservation" class="btn-primary">Reserve Your Stay</a>
+      <a href="#rooms" class="btn-ghost">Explore Suites</a>
+    </div>
+  </div>
+  <div class="hero-scroll" aria-hidden="true">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- INTRO -->
+<section id="intro" aria-label="About Aurora Alpine Resort">
+  <div class="intro-text reveal">
+    <span class="section-eyebrow">A Singular Address</span>
+    <h2 class="section-title">Crafted for those<br>who seek <em>more</em></h2>
+    <p class="section-body">Perched at 2,400 metres above sea level, Aurora Alpine Resort commands views that define the word sublime. Fifty-two suites and chalets — each a private world — unified by a singular devotion to the art of extraordinary hospitality.</p>
+    <div class="intro-stat-row">
+      <div class="intro-stat reveal reveal-delay-1">
+        <strong>2,400m</strong>
+        <span>Elevation</span>
+      </div>
+      <div class="intro-stat reveal reveal-delay-2">
+        <strong>52</strong>
+        <span>Private Suites</span>
+      </div>
+      <div class="intro-stat reveal reveal-delay-3">
+        <strong>100%</strong>
+        <span>Bespoke</span>
+      </div>
+    </div>
+  </div>
+  <div class="intro-photo photo-ph alpine reveal reveal-delay-2" role="img" aria-label="Aurora Alpine Resort exterior — Swiss Alps panorama photograph"></div>
+</section>
+
+<!-- ROOMS -->
+<section id="rooms" aria-label="Rooms and Suites">
+  <div class="section-header reveal">
+    <span class="section-eyebrow">Accommodation</span>
+    <h2 class="section-title">Rooms &amp; <em>Suites</em></h2>
+    <p class="section-body">From intimate alpine retreats to palatial private chalets, every accommodation is a masterwork of mountain luxury.</p>
+  </div>
+  <div class="rooms-grid">
+
+    <article class="room-card reveal">
+      <div class="room-img photo-ph interior" role="img" aria-label="Alpine Deluxe Room interior photograph"></div>
+      <div class="room-card-overlay"></div>
+      <div class="room-card-content">
+        <span class="room-tag">Entry Luxury</span>
+        <h3 class="room-name">Alpine Deluxe Room</h3>
+        <p class="room-price">From <strong>CHF 620</strong> / night</p>
+        <ul class="room-features">
+          <li>Mountain View</li>
+          <li>King Bed</li>
+          <li>Private Balcony</li>
+        </ul>
+        <a href="#reservation" class="room-cta">Book Suite</a>
+      </div>
+    </article>
+
+    <article class="room-card reveal reveal-delay-1">
+      <div class="room-img photo-ph interior" role="img" aria-label="Panorama Suite interior photograph"></div>
+      <div class="room-card-overlay"></div>
+      <div class="room-card-content">
+        <span class="room-tag">Panoramic</span>
+        <h3 class="room-name">Panorama Suite</h3>
+        <p class="room-price">From <strong>CHF 980</strong> / night</p>
+        <ul class="room-features">
+          <li>Floor-to-Ceiling Glass</li>
+          <li>Living Area</li>
+          <li>Premium Amenities</li>
+        </ul>
+        <a href="#reservation" class="room-cta">Book Suite</a>
+      </div>
+    </article>
+
+    <article class="room-card reveal reveal-delay-2">
+      <div class="room-img photo-ph interior" role="img" aria-label="Honeymoon Retreat Suite photograph"></div>
+      <div class="room-card-overlay"></div>
+      <div class="room-card-content">
+        <span class="room-tag">For Couples</span>
+        <h3 class="room-name">Honeymoon Retreat Suite</h3>
+        <p class="room-price">From <strong>CHF 1,200</strong> / night</p>
+        <ul class="room-features">
+          <li>Fireplace</li>
+          <li>Private Terrace</li>
+          <li>Romantic Setup</li>
+        </ul>
+        <a href="#reservation" class="room-cta">Book Suite</a>
+      </div>
+    </article>
+
+    <article class="room-card reveal">
+      <div class="room-img photo-ph interior" role="img" aria-label="Executive Mountain Suite photograph"></div>
+      <div class="room-card-overlay"></div>
+      <div class="room-card-content">
+        <span class="room-tag">Executive</span>
+        <h3 class="room-name">Executive Mountain Suite</h3>
+        <p class="room-price">From <strong>CHF 1,450</strong> / night</p>
+        <ul class="room-features">
+          <li>Private Workspace</li>
+          <li>Lounge Area</li>
+          <li>VIP Services</li>
+        </ul>
+        <a href="#reservation" class="room-cta">Book Suite</a>
+      </div>
+    </article>
+
+    <article class="room-card reveal reveal-delay-1">
+      <div class="room-img photo-ph interior" role="img" aria-label="Aurora Signature Suite photograph"></div>
+      <div class="room-card-overlay"></div>
+      <div class="room-card-content">
+        <span class="room-tag">Flagship</span>
+        <h3 class="room-name">Aurora Signature Suite</h3>
+        <p class="room-price">From <strong>CHF 1,800</strong> / night</p>
+        <ul class="room-features">
+          <li>Private Jacuzzi</li>
+          <li>Fireplace</li>
+          <li>Butler Service</li>
+        </ul>
+        <a href="#reservation" class="room-cta">Book Suite</a>
+      </div>
+    </article>
+
+    <article class="room-card reveal reveal-delay-2">
+      <div class="room-img photo-ph interior" role="img" aria-label="Royal Alpine Chalet photograph"></div>
+      <div class="room-card-overlay"></div>
+      <div class="room-card-content">
+        <span class="room-tag">Ultra-Luxury</span>
+        <h3 class="room-name">Royal Alpine Chalet</h3>
+        <p class="room-price">From <strong>CHF 3,800</strong> / night</p>
+        <ul class="room-features">
+          <li>Private Chalet</li>
+          <li>Personal Chef</li>
+          <li>Private Spa</li>
+        </ul>
+        <a href="#reservation" class="room-cta">Book Chalet</a>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- EXPERIENCES -->
+<section id="experiences" aria-label="Signature Experiences">
+  <div class="exp-header">
+    <span class="section-eyebrow">Curated Moments</span>
+    <h2 class="section-title reveal">Signature <em>Experiences</em></h2>
+    <p class="section-body reveal reveal-delay-1">Each encounter is designed once — for you alone. No two moments at Aurora are ever the same.</p>
+  </div>
+  <div class="exp-track" role="list">
+
+    <article class="exp-card" role="listitem">
+      <div class="exp-img photo-ph alpine" role="img" aria-label="Sunrise Above the Clouds experience photograph"></div>
+      <div class="exp-overlay"></div>
+      <div class="exp-content">
+        <span class="exp-num">01 &nbsp;/&nbsp; 06</span>
+        <h3 class="exp-name">Sunrise Above the Clouds</h3>
+        <p class="exp-desc">A private cable car ascent before dawn. Champagne breakfast served at 3,000 metres as the Alps ignite in gold.</p>
+        <span class="exp-arrow">Discover →</span>
+      </div>
+    </article>
+
+    <article class="exp-card" role="listitem">
+      <div class="exp-img photo-ph spa" role="img" aria-label="Private Alpine Spa Retreat photograph"></div>
+      <div class="exp-overlay"></div>
+      <div class="exp-content">
+        <span class="exp-num">02 &nbsp;/&nbsp; 06</span>
+        <h3 class="exp-name">Private Alpine Spa Retreat</h3>
+        <p class="exp-desc">Exclusive outdoor thermal pools overlooking glaciers. Bespoke wellness rituals drawn from centuries of Swiss Alpine tradition.</p>
+        <span class="exp-arrow">Discover →</span>
+      </div>
+    </article>
+
+    <article class="exp-card" role="listitem">
+      <div class="exp-img photo-ph dining" role="img" aria-label="Chef's Fire & Wine Experience photograph"></div>
+      <div class="exp-overlay"></div>
+      <div class="exp-content">
+        <span class="exp-num">03 &nbsp;/&nbsp; 06</span>
+        <h3 class="exp-name">Chef's Fire &amp; Wine</h3>
+        <p class="exp-desc">Open-fire cooking with our Executive Chef. Rare vintages, seasonal Alpine produce, and a table set under mountain stars.</p>
+        <span class="exp-arrow">Discover →</span>
+      </div>
+    </article>
+
+    <article class="exp-card" role="listitem">
+      <div class="exp-img photo-ph alpine" role="img" aria-label="Helicopter Glacier Adventure photograph"></div>
+      <div class="exp-overlay"></div>
+      <div class="exp-content">
+        <span class="exp-num">04 &nbsp;/&nbsp; 06</span>
+        <h3 class="exp-name">Helicopter Glacier Adventure</h3>
+        <p class="exp-desc">Soar over ancient glaciers in a private helicopter. Land on the ice for a champagne picnic at the edge of the world.</p>
+        <span class="exp-arrow">Discover →</span>
+      </div>
+    </article>
+
+    <article class="exp-card" role="listitem">
+      <div class="exp-img photo-ph alpine" role="img" aria-label="Aurora Stargazing Nights photograph"></div>
+      <div class="exp-overlay"></div>
+      <div class="exp-content">
+        <span class="exp-num">05 &nbsp;/&nbsp; 06</span>
+        <h3 class="exp-name">Aurora Stargazing Nights</h3>
+        <p class="exp-desc">A guided celestial journey under skies unmarked by light. Cashmere blankets, hot chocolate, and professional telescopes provided.</p>
+        <span class="exp-arrow">Discover →</span>
+      </div>
+    </article>
+
+    <article class="exp-card" role="listitem">
+      <div class="exp-img photo-ph interior" role="img" aria-label="Alpine Chalet Escape photograph"></div>
+      <div class="exp-overlay"></div>
+      <div class="exp-content">
+        <span class="exp-num">06 &nbsp;/&nbsp; 06</span>
+        <h3 class="exp-name">Alpine Chalet Escape</h3>
+        <p class="exp-desc">A private mountain chalet commandeered entirely for you — personal chef, dedicated concierge, and total Alpine solitude.</p>
+        <span class="exp-arrow">Discover →</span>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- DINING -->
+<section id="dining" aria-label="Fine Dining">
+  <div class="dining-inner">
+    <div class="dining-visual photo-ph dining" role="img" aria-label="Sommet Restaurant — fine dining interior photograph"></div>
+    <div class="dining-content">
+      <span class="section-eyebrow reveal">Fine Dining</span>
+      <h2 class="section-title reveal">Le Sommet<br><em>Restaurant</em></h2>
+      <p class="section-body reveal reveal-delay-1">Two Michelin stars. One destination. Our Executive Chef transforms the seasonal larder of the Swiss Alps into a nightly theatre of flavour. The dining room — suspended on glass above a 400-metre drop — frames the glacier as the evening's centrepiece.</p>
+      <div class="dining-detail reveal reveal-delay-2">
+        <div class="dining-detail-row">
+          <span class="dining-detail-label">Dress Code</span>
+          <span class="dining-detail-val">Smart Elegant</span>
+        </div>
+        <div class="dining-detail-row">
+          <span class="dining-detail-label">Service</span>
+          <span class="dining-detail-val">Breakfast · Lunch · Dinner</span>
+        </div>
+        <div class="dining-detail-row">
+          <span class="dining-detail-label">Reservations</span>
+          <span class="dining-detail-val">Guests receive priority booking</span>
+        </div>
+        <div class="dining-detail-row">
+          <span class="dining-detail-label">Recognition</span>
+          <span class="dining-detail-val">★★ Michelin &nbsp;·&nbsp; Wine Spectator Grand Award</span>
+        </div>
+      </div>
+      <a href="#reservation" class="btn-ghost" style="margin-top:2.5rem;display:inline-flex">Reserve a Table</a>
+    </div>
+  </div>
+</section>
+
+<!-- SPA -->
+<section id="spa" aria-label="Spa and Wellness">
+  <div class="spa-inner">
+    <div class="spa-layout">
+      <div class="spa-visual reveal">
+        <div class="photo-ph spa" style="height:100%" role="img" aria-label="Aurora Spa thermal pool photograph"></div>
+        <div class="spa-badge">
+          <strong>3,000</strong>
+          <span>sq·m Spa</span>
+        </div>
+      </div>
+      <div class="spa-content">
+        <span class="section-eyebrow reveal">Wellness</span>
+        <h2 class="section-title reveal">Aurora <em>Spa</em></h2>
+        <p class="section-body reveal reveal-delay-1">Three thousand square metres of pure restoration. From indoor-outdoor thermal pools fed by Alpine springs to cutting-edge longevity treatments — every ritual is calibrated to your individual constitution by our team of specialist therapists.</p>
+        <div class="spa-treatments reveal reveal-delay-2">
+          <div class="spa-item">
+            <h4 class="spa-item-name">Alpine Thermal Journey</h4>
+            <p class="spa-item-desc">A guided circuit through thermal pools, steam caves, and ice fountains</p>
+          </div>
+          <div class="spa-item">
+            <h4 class="spa-item-name">Glacier Stone Ritual</h4>
+            <p class="spa-item-desc">Deep-tissue massage using stones drawn from local glacial streams</p>
+          </div>
+          <div class="spa-item">
+            <h4 class="spa-item-name">Couples' Sanctuary</h4>
+            <p class="spa-item-desc">A private spa suite with plunge pool, fireplace, and dual treatments</p>
+          </div>
+          <div class="spa-item">
+            <h4 class="spa-item-name">Alpine Longevity Programme</h4>
+            <p class="spa-item-desc">A three-day bespoke wellness protocol by our resident physician</p>
+          </div>
+        </div>
+        <a href="#reservation" class="btn-primary" style="margin-top:3rem;display:inline-flex">Book a Treatment</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section id="testimonials" aria-label="Guest Testimonials">
+  <div class="testi-inner">
+    <span class="section-eyebrow reveal">Guest Voices</span>
+    <h2 class="section-title reveal" style="margin-bottom:4rem">In Their <em>Words</em></h2>
+    <div class="testi-slider" role="region" aria-live="polite" aria-label="Testimonial carousel">
+
+      <div class="testi-slide active" role="group" aria-label="Testimonial 1 of 5">
+        <div class="testi-stars" aria-label="5 stars">★ ★ ★ ★ ★</div>
+        <blockquote class="testi-quote">"Aurora didn't just exceed our expectations — it quietly, permanently redefined what we understood luxury to be. We left different people."</blockquote>
+        <cite class="testi-author">Isabella &amp; James Whitmore &nbsp;·&nbsp; Honeymoon Suite &nbsp;·&nbsp; London</cite>
+      </div>
+
+      <div class="testi-slide" role="group" aria-label="Testimonial 2 of 5">
+        <div class="testi-stars" aria-label="5 stars">★ ★ ★ ★ ★</div>
+        <blockquote class="testi-quote">"The sunrise helicopter experience is the single most extraordinary thing I have done in twenty years of world travel. Non-negotiable."</blockquote>
+        <cite class="testi-author">Hiroshi Tanaka &nbsp;·&nbsp; Executive Mountain Suite &nbsp;·&nbsp; Tokyo</cite>
+      </div>
+
+      <div class="testi-slide" role="group" aria-label="Testimonial 3 of 5">
+        <div class="testi-stars" aria-label="5 stars">★ ★ ★ ★ ★</div>
+        <blockquote class="testi-quote">"Le Sommet served the finest meal of my life. Our butler remembered my wife's favourite champagne from our stay three years prior. That is Aurora."</blockquote>
+        <cite class="testi-author">Antoine Beaumont &nbsp;·&nbsp; Aurora Signature Suite &nbsp;·&nbsp; Paris</cite>
+      </div>
+
+      <div class="testi-slide" role="group" aria-label="Testimonial 4 of 5">
+        <div class="testi-stars" aria-label="5 stars">★ ★ ★ ★ ★</div>
+        <blockquote class="testi-quote">"We have stayed at Aman, Six Senses, and the best Maldives properties. Aurora stands apart. The silence alone is worth everything."</blockquote>
+        <cite class="testi-author">Priya &amp; Arjun Mehta &nbsp;·&nbsp; Royal Alpine Chalet &nbsp;·&nbsp; Dubai</cite>
+      </div>
+
+      <div class="testi-slide" role="group" aria-label="Testimonial 5 of 5">
+        <div class="testi-stars" aria-label="5 stars">★ ★ ★ ★ ★</div>
+        <blockquote class="testi-quote">"The spa's three-day longevity programme was transformative. I arrived exhausted; I left restored. Aurora understood exactly what I needed before I did."</blockquote>
+        <cite class="testi-author">Dr. Sarah Chen &nbsp;·&nbsp; Panorama Suite &nbsp;·&nbsp; New York</cite>
+      </div>
+
+    </div>
+    <div class="testi-controls" aria-label="Testimonial controls">
+      <button class="testi-btn" id="testi-prev" aria-label="Previous testimonial">&#8592;</button>
+      <div class="testi-dot active" aria-hidden="true"></div>
+      <div class="testi-dot" aria-hidden="true"></div>
+      <div class="testi-dot" aria-hidden="true"></div>
+      <div class="testi-dot" aria-hidden="true"></div>
+      <div class="testi-dot" aria-hidden="true"></div>
+      <button class="testi-btn" id="testi-next" aria-label="Next testimonial">&#8594;</button>
+    </div>
+  </div>
+</section>
+
+<!-- GALLERY -->
+<section id="gallery" aria-label="Photo Gallery">
+  <div class="gallery-inner">
+    <div class="section-header reveal" style="margin-bottom:0">
+      <span class="section-eyebrow">Visual Journey</span>
+      <h2 class="section-title">The Aurora <em>World</em></h2>
+    </div>
+    <div class="gallery-grid">
+      <div class="g-item reveal" aria-label="Gallery image — Alpine panorama">
+        <div class="photo-ph gallery1"></div>
+        <div class="g-item-overlay"><span>Alpine Panorama</span></div>
+      </div>
+      <div class="g-item reveal reveal-delay-1" aria-label="Gallery image — Suite interior">
+        <div class="photo-ph gallery2"></div>
+        <div class="g-item-overlay"><span>Suite Interior</span></div>
+      </div>
+      <div class="g-item reveal reveal-delay-2" aria-label="Gallery image — Spa & Wellness">
+        <div class="photo-ph gallery3"></div>
+        <div class="g-item-overlay"><span>Spa &amp; Wellness</span></div>
+      </div>
+      <div class="g-item reveal" aria-label="Gallery image — Signature dining">
+        <div class="photo-ph gallery4"></div>
+        <div class="g-item-overlay"><span>Le Sommet</span></div>
+      </div>
+      <div class="g-item reveal reveal-delay-1" aria-label="Gallery image — Winter landscape">
+        <div class="photo-ph gallery5"></div>
+        <div class="g-item-overlay"><span>Winter Landscape</span></div>
+      </div>
+      <div class="g-item reveal reveal-delay-2" aria-label="Gallery image — Private chalet">
+        <div class="photo-ph gallery6"></div>
+        <div class="g-item-overlay"><span>Private Chalet</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- RESERVATION -->
+<section id="reservation" aria-label="Make a Reservation">
+  <div class="res-inner">
+    <span class="section-eyebrow reveal">Your Stay Awaits</span>
+    <h2 class="section-title reveal">Reserve Your <em>Sanctuary</em></h2>
+    <p class="section-body reveal reveal-delay-1" style="margin:0 auto 0">Complimentary transfers from Zurich. Flexible cancellation. Our reservations team is available 24 hours.</p>
+    <div class="res-form reveal reveal-delay-2" role="form" aria-label="Reservation form">
+      <div class="res-row">
+        <div class="res-field">
+          <label for="checkin">Arrival</label>
+          <input type="date" id="checkin" name="checkin" aria-label="Check-in date">
+        </div>
+        <div class="res-field">
+          <label for="checkout">Departure</label>
+          <input type="date" id="checkout" name="checkout" aria-label="Check-out date">
+        </div>
+        <div class="res-field">
+          <label for="guests">Guests</label>
+          <select id="guests" name="guests" aria-label="Number of guests">
+            <option>1 Guest</option>
+            <option selected>2 Guests</option>
+            <option>3 Guests</option>
+            <option>4+ Guests</option>
+          </select>
+        </div>
+        <div class="res-field">
+          <label for="room-type">Suite Type</label>
+          <select id="room-type" name="room-type" aria-label="Suite type">
+            <option>Alpine Deluxe Room</option>
+            <option>Panorama Suite</option>
+            <option>Honeymoon Retreat</option>
+            <option>Executive Suite</option>
+            <option>Aurora Signature Suite</option>
+            <option>Royal Alpine Chalet</option>
+          </select>
+        </div>
+      </div>
+      <button class="res-submit" type="submit" id="res-submit">Check Availability &amp; Reserve</button>
+    </div>
+    <p class="res-note">By proceeding you agree to our <a href="#">Privacy Policy</a> and <a href="#">Booking Terms</a>. No payment is taken at this stage.</p>
+  </div>
+</section>
+
+<!-- LOCATION -->
+<section id="location" aria-label="Location and Contact">
+  <div class="location-inner">
+    <div class="location-map">
+      <div class="photo-ph alpine" style="height:100%;min-height:580px" role="img" aria-label="Map showing Aurora Alpine Resort location in the Swiss Alps"></div>
+      <div class="map-pin" aria-hidden="true"></div>
+    </div>
+    <div class="location-content">
+      <span class="section-eyebrow reveal">Find Us</span>
+      <h2 class="section-title reveal">The Swiss <em>Alps</em></h2>
+      <p class="section-body reveal reveal-delay-1">Reachable by private transfer from Zurich (2h), Geneva (3h), or by helicopter from any major Swiss city in under 45 minutes.</p>
+      <div class="location-details reveal reveal-delay-2">
+        <div class="loc-item">
+          <div class="loc-icon" aria-hidden="true">&#9650;</div>
+          <div>
+            <div class="loc-label">Address</div>
+            <div class="loc-val">Aurora Alpine Resort<br>Bergweg 1, 3920 Zermatt<br>Switzerland</div>
+          </div>
+        </div>
+        <div class="loc-item">
+          <div class="loc-icon" aria-hidden="true">&#9742;</div>
+          <div>
+            <div class="loc-label">Reservations</div>
+            <div class="loc-val">+41 27 000 0000<br>reservations@aurora-alpine.com</div>
+          </div>
+        </div>
+        <div class="loc-item">
+          <div class="loc-icon" aria-hidden="true">&#9992;</div>
+          <div>
+            <div class="loc-label">Helicopter Transfers</div>
+            <div class="loc-val">Available from Zurich, Geneva &amp; Milan<br>45 minutes from Zurich Airport</div>
+          </div>
+        </div>
+        <div class="loc-item">
+          <div class="loc-icon" aria-hidden="true">&#9986;</div>
+          <div>
+            <div class="loc-label">Concierge Hours</div>
+            <div class="loc-val">24 hours &nbsp;·&nbsp; 365 days</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer role="contentinfo">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="nav-logo">AURORA <span>·</span> ALPINE</div>
+        <p>An ultra-luxury mountain sanctuary in the Swiss Alps, where timeless hospitality meets the grandeur of the natural world.</p>
+        <div class="footer-social">
+          <a href="#" aria-label="Instagram">&#9788;</a>
+          <a href="#" aria-label="Facebook">f</a>
+          <a href="#" aria-label="Pinterest">P</a>
+          <a href="#" aria-label="WeChat">W</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Resort</h4>
+        <ul>
+          <li><a href="#rooms">Rooms &amp; Suites</a></li>
+          <li><a href="#dining">Le Sommet</a></li>
+          <li><a href="#spa">Aurora Spa</a></li>
+          <li><a href="#experiences">Experiences</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Plan Your Stay</h4>
+        <ul>
+          <li><a href="#reservation">Make a Reservation</a></li>
+          <li><a href="#location">Getting Here</a></li>
+          <li><a href="#">Gift Cards</a></li>
+          <li><a href="#">Weddings &amp; Events</a></li>
+          <li><a href="#">Corporate Retreats</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Information</h4>
+        <ul>
+          <li><a href="#">About Aurora</a></li>
+          <li><a href="#">Sustainability</a></li>
+          <li><a href="#">Press &amp; Media</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 Aurora Alpine Resort. All rights reserved. &nbsp;·&nbsp; Zermatt, Switzerland</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+        <a href="#">Cookies</a>
+        <a href="#">Accessibility</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<div id="lightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+  <button id="lightbox-close" aria-label="Close image viewer">&#10005;</button>
+  <div id="lightbox-content"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
